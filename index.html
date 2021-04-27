@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>BATTERY ICON</title>
+<link rel="stylesheet" href="css\ss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <img src="pp.jpg" width="300px" height="600px">
+   <div id="anima" class="fa"> </div>
+   
+   <script>
+       function batterycharge(){
+           var a;
+           
+           a = document.getElementById("anima");
+           a.innerHTML="&#xf244;";
+           setTimeout(function() {a.innerHTML = "&#xf244;";
+               }, 1000);
+               setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 4000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 5000);
+       }
+       batterycharge();
+       setInterval(batterycharge,6000);
+
+   </script>
+   <h1>BATTERY CHARGING ICON</h1>
+</body>
+</html>
